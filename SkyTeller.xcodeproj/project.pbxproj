@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2261941F1B5270D800233045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2261941E1B5270D800233045 /* AppDelegate.swift */; };
-		226194211B5270D800233045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226194201B5270D800233045 /* ViewController.swift */; };
-		226194241B5270D800233045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226194221B5270D800233045 /* Main.storyboard */; };
 		226194261B5270D800233045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226194251B5270D800233045 /* Images.xcassets */; };
-		226194291B5270D800233045 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226194271B5270D800233045 /* LaunchScreen.xib */; };
 		226194351B5270D800233045 /* SkyTellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226194341B5270D800233045 /* SkyTellerTests.swift */; };
+		226194411B5271B600233045 /* WXController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226194401B5271B600233045 /* WXController.swift */; };
+		226194451B5273E500233045 /* ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 226194441B5273E500233045 /* ObjC.m */; };
+		2261944F1B52744400233045 /* WXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 226194471B52744400233045 /* WXManager.m */; };
+		226194501B52744400233045 /* WXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 226194481B52744400233045 /* WXClient.m */; };
+		226194511B52744400233045 /* WXCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 226194491B52744400233045 /* WXCondition.m */; };
+		226194521B52744400233045 /* weather_format.json in Resources */ = {isa = PBXBuildFile; fileRef = 2261944B1B52744400233045 /* weather_format.json */; };
+		226194531B52744400233045 /* WXDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2261944D1B52744400233045 /* WXDailyForecast.m */; };
+		226194551B52746700233045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226194541B52746700233045 /* Foundation.framework */; };
+		226194571B52747200233045 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226194561B52747200233045 /* CoreLocation.framework */; };
+		226194591B52747B00233045 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226194581B52747B00233045 /* CoreGraphics.framework */; };
+		2261945B1B52754800233045 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2261945A1B52754800233045 /* UIKit.framework */; };
+		5FE6BAC7A3502699111489A8 /* libPods-SkyTeller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CDC9DB1235F4302BAB1325 /* libPods-SkyTeller.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +38,30 @@
 		226194191B5270D800233045 /* SkyTeller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyTeller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2261941D1B5270D800233045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2261941E1B5270D800233045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		226194201B5270D800233045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		226194231B5270D800233045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		226194251B5270D800233045 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		226194281B5270D800233045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2261942E1B5270D800233045 /* SkyTellerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyTellerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		226194331B5270D800233045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		226194341B5270D800233045 /* SkyTellerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyTellerTests.swift; sourceTree = "<group>"; };
+		226194401B5271B600233045 /* WXController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXController.swift; sourceTree = "<group>"; };
+		226194421B5273E400233045 /* SkyTeller-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyTeller-Bridging-Header.h"; sourceTree = "<group>"; };
+		226194431B5273E500233045 /* ObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjC.h; sourceTree = "<group>"; };
+		226194441B5273E500233045 /* ObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjC.m; sourceTree = "<group>"; };
+		226194461B52744400233045 /* WXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXManager.h; sourceTree = "<group>"; };
+		226194471B52744400233045 /* WXManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXManager.m; sourceTree = "<group>"; };
+		226194481B52744400233045 /* WXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXClient.m; sourceTree = "<group>"; };
+		226194491B52744400233045 /* WXCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCondition.m; sourceTree = "<group>"; };
+		2261944A1B52744400233045 /* WXCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCondition.h; sourceTree = "<group>"; };
+		2261944B1B52744400233045 /* weather_format.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weather_format.json; sourceTree = "<group>"; };
+		2261944C1B52744400233045 /* WXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXClient.h; sourceTree = "<group>"; };
+		2261944D1B52744400233045 /* WXDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDailyForecast.m; sourceTree = "<group>"; };
+		2261944E1B52744400233045 /* WXDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDailyForecast.h; sourceTree = "<group>"; };
+		226194541B52746700233045 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		226194561B52747200233045 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		226194581B52747B00233045 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2261945A1B52754800233045 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3EFEF0A43162CE7AF4270812 /* Pods-SkyTeller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyTeller.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyTeller/Pods-SkyTeller.release.xcconfig"; sourceTree = "<group>"; };
+		68CDC9DB1235F4302BAB1325 /* libPods-SkyTeller.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkyTeller.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86B7E2FC219FCA254E047C35 /* Pods-SkyTeller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyTeller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyTeller/Pods-SkyTeller.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +69,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2261945B1B52754800233045 /* UIKit.framework in Frameworks */,
+				226194591B52747B00233045 /* CoreGraphics.framework in Frameworks */,
+				226194571B52747200233045 /* CoreLocation.framework in Frameworks */,
+				226194551B52746700233045 /* Foundation.framework in Frameworks */,
+				5FE6BAC7A3502699111489A8 /* libPods-SkyTeller.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +93,8 @@
 				2261941B1B5270D800233045 /* SkyTeller */,
 				226194311B5270D800233045 /* SkyTellerTests */,
 				2261941A1B5270D800233045 /* Products */,
+				AF545F2CE72A5DCCD2C0410F /* Pods */,
+				D40C780FA82E81067552EA76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +110,13 @@
 		2261941B1B5270D800233045 /* SkyTeller */ = {
 			isa = PBXGroup;
 			children = (
+				226194401B5271B600233045 /* WXController.swift */,
 				2261941E1B5270D800233045 /* AppDelegate.swift */,
-				226194201B5270D800233045 /* ViewController.swift */,
-				226194221B5270D800233045 /* Main.storyboard */,
 				226194251B5270D800233045 /* Images.xcassets */,
-				226194271B5270D800233045 /* LaunchScreen.xib */,
 				2261941C1B5270D800233045 /* Supporting Files */,
+				226194431B5273E500233045 /* ObjC.h */,
+				226194441B5273E500233045 /* ObjC.m */,
+				226194421B5273E400233045 /* SkyTeller-Bridging-Header.h */,
 			);
 			path = SkyTeller;
 			sourceTree = "<group>";
@@ -90,6 +124,15 @@
 		2261941C1B5270D800233045 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				226194461B52744400233045 /* WXManager.h */,
+				226194471B52744400233045 /* WXManager.m */,
+				226194481B52744400233045 /* WXClient.m */,
+				226194491B52744400233045 /* WXCondition.m */,
+				2261944A1B52744400233045 /* WXCondition.h */,
+				2261944B1B52744400233045 /* weather_format.json */,
+				2261944C1B52744400233045 /* WXClient.h */,
+				2261944D1B52744400233045 /* WXDailyForecast.m */,
+				2261944E1B52744400233045 /* WXDailyForecast.h */,
 				2261941D1B5270D800233045 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +155,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AF545F2CE72A5DCCD2C0410F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86B7E2FC219FCA254E047C35 /* Pods-SkyTeller.debug.xcconfig */,
+				3EFEF0A43162CE7AF4270812 /* Pods-SkyTeller.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D40C780FA82E81067552EA76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2261945A1B52754800233045 /* UIKit.framework */,
+				226194581B52747B00233045 /* CoreGraphics.framework */,
+				226194561B52747200233045 /* CoreLocation.framework */,
+				226194541B52746700233045 /* Foundation.framework */,
+				68CDC9DB1235F4302BAB1325 /* libPods-SkyTeller.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 226194381B5270D800233045 /* Build configuration list for PBXNativeTarget "SkyTeller" */;
 			buildPhases = (
+				55F9F383864FECAE74E4FDEF /* Check Pods Manifest.lock */,
 				226194151B5270D800233045 /* Sources */,
 				226194161B5270D800233045 /* Frameworks */,
 				226194171B5270D800233045 /* Resources */,
+				48E08466AA464A22DB7B2A8D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,9 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				226194241B5270D800233045 /* Main.storyboard in Resources */,
-				226194291B5270D800233045 /* LaunchScreen.xib in Resources */,
 				226194261B5270D800233045 /* Images.xcassets in Resources */,
+				226194521B52744400233045 /* weather_format.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +272,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48E08466AA464A22DB7B2A8D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyTeller/Pods-SkyTeller-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55F9F383864FECAE74E4FDEF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		226194151B5270D800233045 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				226194211B5270D800233045 /* ViewController.swift in Sources */,
+				2261944F1B52744400233045 /* WXManager.m in Sources */,
+				226194531B52744400233045 /* WXDailyForecast.m in Sources */,
 				2261941F1B5270D800233045 /* AppDelegate.swift in Sources */,
+				226194501B52744400233045 /* WXClient.m in Sources */,
+				226194411B5271B600233045 /* WXController.swift in Sources */,
+				226194511B52744400233045 /* WXCondition.m in Sources */,
+				226194451B5273E500233045 /* ObjC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +337,6 @@
 			targetProxy = 2261942F1B5270D800233045 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		226194221B5270D800233045 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				226194231B5270D800233045 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		226194271B5270D800233045 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				226194281B5270D800233045 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		226194361B5270D800233045 /* Debug */ = {
@@ -338,21 +422,30 @@
 		};
 		226194391B5270D800233045 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B7E2FC219FCA254E047C35 /* Pods-SkyTeller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SkyTeller/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyTeller/SkyTeller-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2261943A1B5270D800233045 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFEF0A43162CE7AF4270812 /* Pods-SkyTeller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SkyTeller/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyTeller/SkyTeller-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +502,7 @@
 				2261943A1B5270D800233045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2261943B1B5270D800233045 /* Build configuration list for PBXNativeTarget "SkyTellerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +511,7 @@
 				2261943D1B5270D800233045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
