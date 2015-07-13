@@ -225,7 +225,7 @@ class WXController: UIViewController, UITableViewDataSource, UITableViewDelegate
         centidegreeView.image = UIImage(named: "centi_degree")
         
         windSpeedView = UIImageView(frame: windIconFrame)
-        windSpeedView!.contentMode = UIViewContentMode.ScaleAspectFill
+        windSpeedView!.contentMode = UIViewContentMode.Center
         windSpeedView!.backgroundColor = UIColor.clearColor()
         header.addSubview(windSpeedView!)
         windSpeedView!.image = UIImage(named: "weather-wind_0")
@@ -345,10 +345,11 @@ class WXController: UIViewController, UITableViewDataSource, UITableViewDelegate
             if(WXManager.sharedManager().hourlyForecast != nil) {
                 return min(WXManager.sharedManager().hourlyForecast.count, 7) + 1
             }
-        }
+        } else {
         
-        if(WXManager.sharedManager().dailyForecast != nil) {
-            return min(WXManager.sharedManager().dailyForecast.count, 7) + 1
+            if(WXManager.sharedManager().dailyForecast != nil) {
+                return min(WXManager.sharedManager().dailyForecast.count, 7) + 1
+            }
         }
         
         return 0
