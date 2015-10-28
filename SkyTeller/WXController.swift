@@ -1,6 +1,6 @@
 //
 //  WXController.swift
-//  simpleWeather
+//  SkyTeller
 //
 //  Created by Roger Zhang on 14/06/2015.
 //  Copyright (c) 2015 Personal Dev. All rights reserved.
