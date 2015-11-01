@@ -27,7 +27,7 @@ class WXController: UIViewController, UITableViewDataSource, UITableViewDelegate
     var windSpeedView: UIImageView?
 
     required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
 
         
     }
@@ -307,8 +307,7 @@ class WXController: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let CellIdentifier = "CellIdentifier"
-        var cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier) as? UITableViewCell
-        
+        var cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier)
         if(cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: CellIdentifier)
         }
