@@ -6,7 +6,7 @@
 
 
 ## Demo	
-![Exercise1](https://github.com/roger-zhang-eng/SkyTeller/demo/1.png)
+![Exercise1](https://github.com/roger-zhang-eng/SkyTeller/tree/master/demo/1.png)
 
 ## Requirements
 - iOS 8.0+
