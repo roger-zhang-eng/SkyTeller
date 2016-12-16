@@ -1,6 +1,6 @@
 # SkyTeller 
 
-`SkyTeller` is a small objective C programm, running on iOS platform. And finally published on apple store.
+`SkyTeller` is a small swift call objective C mix source code programm, running on iOS platform. And finally published on apple store.
 
 
 
